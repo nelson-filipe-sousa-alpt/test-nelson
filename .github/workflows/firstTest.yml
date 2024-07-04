@@ -1,0 +1,24 @@
+name: First Workflow 
+run-name: Run on branch ${{ github.ref }}
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  work:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo ${{ runner.os }}
+    - name: Checkout
+      uses: actions/checkout@v4.1.7
+    - run: |
+        pwd
+        ls -al
+    - run: echo hello world
+  anotherjob:
+    needs: work
+    runs-on: ubuntu-latest
+    steps:
+    - run: pwd
+    - run: ls
