@@ -9,10 +9,10 @@ jobs:
   work:
     runs-on: ubuntu-latest
     steps:
-    - run: nelson-filipe-sousa-alpt/myNewAction@main
+    - run: nelson-filipe-sousa-alpt/mynewaction@v1
     - run: echo ${{ runner.os }}
     - name: Checkout
-      uses: actions/checkout@v4.1.7
+      uses: actions/checkout@v4
     - run: |
         pwd
         ls -al
