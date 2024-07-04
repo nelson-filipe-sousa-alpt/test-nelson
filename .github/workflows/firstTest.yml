@@ -9,7 +9,7 @@ jobs:
   work:
     runs-on: ubuntu-latest
     steps:
-    - uses: nelson-filipe-sousa-alpt/myNewAction@main
+    - run: nelson-filipe-sousa-alpt/myNewAction@v1
     - run: echo ${{ runner.os }}
     - name: Checkout
       uses: actions/checkout@v4.1.7
