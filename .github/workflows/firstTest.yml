@@ -9,7 +9,7 @@ jobs:
   actionOnOtherRepo:
     runs-on: ubuntu-latest
     steps:
-    - uses: nelson-filipe-sousa-alpt/mynewaction@v1
+    - uses: nelson-filipe-sousa-alpt/mynewaction@v2
   work:
     runs-on: ubuntu-latest
     steps:
